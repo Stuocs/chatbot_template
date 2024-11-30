@@ -1,3 +1,4 @@
+# @Englis_Version
 # Chatbot Template
 
 This repository contains a basic template for a chatbot with several predefined intents. The chatbot is designed to answer common questions, perform certain calculations, and maintain basic conversations.
@@ -42,13 +43,14 @@ This chatbot template was created by [Alesber](https://github.com/Stuocs).
 ## License
 This project is licensed under the MIT License. For more information, see the [MIT_LICENSE](LICENSE) file.
 
+# @Versión_En_Español
 # Plantilla para Chatbot
 
-Este repositorio contiene una plantilla básica para un chatbot con varias intenciones predefinidas. El chatbot está diseñado para responder a preguntas comunes, hacer ciertos cálculos y mantener conversaciones básicas.
+Este repositorio contiene una plantilla básica para un chatbot con varias intenciones predefinidas. El chatbot está diseñado para responder a preguntas comunes, realizar ciertos cálculos y mantener conversaciones básicas.
 
 ## Contenido
 - **data/training_data.json**: Archivo JSON con las intenciones del chatbot y las posibles respuestas.
-- **README.md**: Documento de introducción y guía para el uso del repositorio.
+- **README.md**: Introducción y guía para el uso del repositorio.
 
 ## Cómo usar
 1. **Clona el repositorio**:
@@ -68,14 +70,20 @@ Este repositorio contiene una plantilla básica para un chatbot con varias inten
    pip3 install -r requirements.txt
    python3 chatbot.py
    ```
-En Windows da error algunas veces al utilizar `pip3 install` por lo que puede que necesites utilizar: 
+En Windows, podrías encontrarte con un error al usar `pip3 install`, por lo que podrías necesitar usar:
 ```bash
 pip install -r requirements.txt
 python chatbot.py
 ```
-Esto se debe a que en muchas ocasiones windows instala por defecto la versión 2 de python en vez de la 3.
+Esto se debe a que Windows a menudo instala Python 2 por defecto en lugar de Python 3.
 
 2. **Modifica training_data.json**:
-En el interior de `/data/training_data.json` se almacena su entrenamiento y las respuestas que tiene para dar predefinidas, el bot además está creado de tal manera que dentro de `learning_data` almacene las conversaciones y aprenda en base a eso, mejorando así su precisión en las respuestas y la manera en la que lo hace.
+Dentro de `/data/training_data.json`, encontrarás los datos de entrenamiento y las respuestas predefinidas. El bot está diseñado para almacenar conversaciones dentro de `learning_data` y aprender de ellas, mejorando su precisión de respuesta y estilo de interacción.
 
-Para modificar su manera de interaccionar se debe modificar `/data/training_data.json`.
+Para modificar la manera en que interactúa, debes ajustar `/data/training_data.json`.
+
+## Créditos
+Esta plantilla de chatbot fue creada por [Alesber](https://github.com/Stuocs).
+
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Para más información, consulta el archivo [MIT_LICENSE](LICENSE).
