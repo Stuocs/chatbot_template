@@ -79,5 +79,59 @@ Bot: ¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter.
 Usuario: Dime un cuento
 Bot: Dime un cuento, un cuento, un cuento, un cuento, un cuento, un cuento, un cuento, un cuento, un cuento, un cuento, un cuento, un cuento,
 
-Usuario: adops
-Bot: adops, and the other two are the same.
+Usuario: Hello
+Bot: Hello! I'm an assistance chatbot. How can I help you?
+
+Usuario: Hola
+Bot: Hi! My name is ChatBot, what do you need?
+
+Usuario: Hola
+Bot: ¡Hey! Soy tu asistente virtual. ¿Cómo puedo ayudarte hoy?
+
+Usuario: Háblame en inglés
+Bot: 
+
+Usuario: Hello
+Bot: ¡Saludos! Soy un asistente virtual, ¿en qué puedo ayudarte?
+
+Usuario: adiós
+Bot: ¡Adiós! Fue un placer ayudarte
+
+Usuario: Hello
+Bot: ¡Hola! Me llamo ChatBot, ¿qué necesitas?
+
+Usuario: How are you
+Bot: 
+
+Usuario: What's your name?
+Bot: 
+
+Usuario: Hello
+Bot: ¡Saludos! Soy un asistente virtual, ¿en qué puedo ayudarte?
+
+Usuario: Cual es tu nombre
+Bot: 
+
+Usuario: Hola
+Bot: ¡Hey! Soy tu asistente virtual. ¿Cómo puedo ayudarte hoy?
+
+Usuario: Hello
+Bot: Hello! My name is ChatBot, what do you need?
+Usuario: Hello
+Bot: Hello! My name is ChatBot, what do you need?
+
+Usuario: What's your name?
+Bot: 
+
+Usuario: What's your name?
+Bot: 
+
+Usuario: Hello
+Bot: Hey! I'm your virtual assistant. How can I assist you today?
+
+Usuario: Hola
+Bot: ¡Hey! Soy tu asistente virtual. ¿Cómo puedo ayudarte hoy?
+
+Usuario: Como te llamas?
+Bot: 
+

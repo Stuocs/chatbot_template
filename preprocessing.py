@@ -11,7 +11,9 @@ nltk.download('punkt')
 
 class TextPreprocessor:
     def __init__(self, language='spanish'):
+        self.language = language
         self.stemmer = SnowballStemmer(language)
+        self.english_stemmer = nltk.PorterStemmer()  # Add English stemmer
         self.label_encoder = LabelEncoder()
         self.threshold = 0.3  # Umbral de confianza para respuestas
         
@@ -39,8 +41,13 @@ class TextPreprocessor:
                 # Limpiar y tokenizar el texto
                 cleaned_pattern = self.clean_text(pattern)
                 tokens = word_tokenize(cleaned_pattern)
-                # Aplicar stemming a cada palabra
-                tokens = [self.stemmer.stem(word) for word in tokens]
+                
+                # Apply stemming based on language
+                if self.language == 'spanish':
+                    tokens = [self.stemmer.stem(word) for word in tokens]
+                else:
+                    tokens = [self.english_stemmer.stem(word) for word in tokens]
+                
                 words.extend(tokens)
                 xy.append((tokens, tag))
                 
@@ -74,7 +81,12 @@ class TextPreprocessor:
         # Limpiar y tokenizar el texto de entrada
         cleaned_text = self.clean_text(text)
         tokens = word_tokenize(cleaned_text)
-        tokens = [self.stemmer.stem(word) for word in tokens]
+        
+        # Apply stemming based on language
+        if self.language == 'spanish':
+            tokens = [self.stemmer.stem(word) for word in tokens]
+        else:
+            tokens = [self.english_stemmer.stem(word) for word in tokens]
         
         # Crear bag of words
         bag = []

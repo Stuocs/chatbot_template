@@ -48,7 +48,68 @@ class Chatbot:
             
         self.model = ChatbotModel.load_model(self.model_path)
         
+    def detect_language(self, text):
+        # Simple language detection based on keywords
+        spanish_keywords = ['hola', 'adiós', 'gracias', 'cuéntame']
+        english_keywords = ['hello', 'bye', 'thank you', 'tell me']
+        
+        if any(keyword in text.lower() for keyword in spanish_keywords):
+            return 'spanish'
+        elif any(keyword in text.lower() for keyword in english_keywords):
+            return 'english'
+        return 'unknown'
+
     def get_response(self, text):
+        language = self.detect_language(text)
+        response = ""
+        
+        if language == 'spanish':
+            # Manejar preguntas matemáticas
+            if self.is_math_question(text):
+                return self.solve_math_question(text)
+            
+            # Manejar solicitudes de cuentos
+            if "cuéntame un cuento" in text.lower():
+                return self.generate_story()
+            
+            # Convertir texto a bag of words
+            X = self.preprocessor.text_to_bag(text)
+            
+            # Obtener predicción y confianza
+            pred_idx, confidence = self.model.predict(X)
+            
+            # Convertir índice predicho a tag
+            predicted_tag = self.preprocessor.label_encoder.inverse_transform([pred_idx])[0]
+            
+            # Obtener respuesta para el tag, considerando la confianza
+            response = self.preprocessor.tag_to_response(predicted_tag, confidence)
+            
+            # Si la confianza es baja, usar el modelo generativo
+            if confidence < 0.5:  # Umbral de confianza
+                response = self.generate_response(text)
+        
+        elif language == 'english':
+            # Handle English responses similarly
+            # Convert text to bag of words
+            X = self.preprocessor.text_to_bag(text)
+            
+            # Get prediction and confidence
+            pred_idx, confidence = self.model.predict(X)
+            
+            # Convert predicted index to tag
+            predicted_tag = self.preprocessor.label_encoder.inverse_transform([pred_idx])[0]
+            
+            # Get response for the tag, considering confidence
+            response = self.preprocessor.tag_to_response(predicted_tag, confidence)
+            
+            # If confidence is low, use the generative model
+            if confidence < 0.5:  # Confidence threshold
+                response = self.generate_response(text)
+        
+        # Store interaction for future learning
+        self.store_learning_data(text, response)
+        
+        return response
         # Manejar preguntas matemáticas
         if self.is_math_question(text):
             return self.solve_math_question(text)

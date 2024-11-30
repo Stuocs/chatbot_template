@@ -177,6 +177,186 @@
                 "Mantener una dieta equilibrada te ayudará a sentirte mejor.",
                 "Dormir al menos 7-8 horas cada noche es vital para una buena salud."
             ]
+            
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hello",
+                "Hey",
+                "Good morning",
+                "Good afternoon",
+                "Good evening",
+                "How are you?",
+                "How are you doing?",
+                "Greetings"
+            ],
+            "responses": [
+                "Hello! I am an assistant chatbot. How can I help you?",
+                "Hey! I'm your virtual assistant. How can I assist you today?",
+                "Hello! My name is ChatBot, what do you need?",
+                "Greetings! I'm a virtual assistant, how can I help you?"
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "What's your name?",
+                "Who are you?",
+                "Can you tell me your name?",
+                "What's your identity?",
+                "Tell me your name"
+            ],
+            "responses": [
+                "My name is ChatBot, I am a virtual assistant",
+                "I am ChatBot, a virtual assistant designed to help you",
+                "My name is ChatBot, how can I help you?",
+                "They call me ChatBot, I'm here to assist you"
+            ]
+        },
+        {
+            "tag": "farewell",
+            "patterns": [
+                "Goodbye",
+                "See you later",
+                "Bye",
+                "See you",
+                "See you soon",
+                "I'm leaving",
+                "I have to go",
+                "exit",
+                "quit",
+                "bye"
+            ],
+            "responses": [
+                "See you later! Have a nice day",
+                "Goodbye! It was a pleasure to help you",
+                "See you soon!",
+                "Have a great day!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thank you",
+                "Thanks a lot",
+                "I appreciate it",
+                "You are very helpful",
+                "Thanks for your help"
+            ],
+            "responses": [
+                "You're welcome! I'm here to help",
+                "It's a pleasure to help you",
+                "No problem, that's what I'm here for",
+                "I'm glad I could be useful"
+            ]
+        },
+        {
+            "tag": "abilities",
+            "patterns": [
+                "What can you do?",
+                "What are your functions?",
+                "What are you for?",
+                "Are you able to",
+                "Can you",
+                "What do you know how to do?"
+            ],
+            "responses": [
+                "I am a basic chatbot. I can hold simple conversations, answer basic questions, and help you with general information",
+                "My capabilities are limited. I am a virtual assistant that can hold basic conversations and answer simple questions",
+                "I am a chat program designed to hold basic conversations and provide simple assistance",
+                "As a chatbot, I can understand and respond to basic questions, but my capabilities are limited"
+            ]
+        },
+        {
+            "tag": "unknown",
+            "patterns": [],
+            "responses": [
+                "Sorry, I don't understand that question. Could you rephrase it?",
+                "I'm not sure I understand what you're saying. Could you say it another way?",
+                "Sorry, but I don't understand your message. Could you explain it another way?",
+                "I don't have an answer for that. Could you ask the question another way?"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "How's the weather?",
+                "What's the weather forecast?",
+                "Is it going to rain today?",
+                "Is it cold?",
+                "What's the temperature?"
+            ],
+            "responses": [
+                "Currently, the weather is sunny with a temperature of 25°C.",
+                "The weather forecast indicates rain for this afternoon.",
+                "Today is cold, the temperature is 5°C.",
+                "The current temperature is 18°C, with a clear sky.",
+                "It's going to rain later, so don't forget your umbrella."
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Say something funny",
+                "Make me laugh",
+                "Do you have any jokes?"
+            ],
+            "responses": [
+                "Why don't birds use Facebook? Because they already have Twitter.",
+                "What does a bee do in the gym? Zumba!",
+                "Why was the math book sad? Because it had too many problems.",
+                "What is the electrician's biggest issue? Not finding his current of life."
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "Give me the news",
+                "What's happening in the world?",
+                "Is there any news?",
+                "Breaking news"
+            ],
+            "responses": [
+                "Here are the latest news: (Provide current news)",
+                "The latest news indicates a significant change in the financial market.",
+                "In recent news, a new scientific discovery has been announced.",
+                "Today's news highlights an important political event."
+            ]
+        },
+        {
+            "tag": "entertainment",
+            "patterns": [
+                "Recommend me a movie",
+                "What movie can I watch?",
+                "Suggest a book",
+                "What's a good series to watch?",
+                "What do you suggest I listen to?"
+            ],
+            "responses": [
+                "I recommend you watch 'Inception', it's a fascinating movie.",
+                "A good book to read is 'One Hundred Years of Solitude' by Gabriel García Márquez.",
+                "A popular series you can watch is 'Stranger Things'.",
+                "For listening, I suggest the album 'Abbey Road' by The Beatles."
+            ]
+        },
+        {
+            "tag": "health",
+            "patterns": [
+                "Do you have any health advice?",
+                "How can I improve my well-being?",
+                "Give me a tip to be healthy",
+                "What's good for health?"
+            ],
+            "responses": [
+                "Drinking enough water every day is crucial for health.",
+                "Regular exercise improves your physical and mental well-being.",
+                "Maintaining a balanced diet will help you feel better.",
+                "Sleeping at least 7-8 hours every night is vital for good health."
+            ]
         }
     ]
 }
+
+
