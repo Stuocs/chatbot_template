@@ -1,4 +1,4 @@
-# @Englis_Version
+# @English_Version
 # Chatbot Template
 
 This repository contains a basic template for a chatbot with several predefined intents. The chatbot is designed to answer common questions, perform certain calculations, and maintain basic conversations.
