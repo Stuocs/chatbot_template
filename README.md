@@ -31,4 +31,7 @@ python chatbot.py
 ```
 Esto se debe a que en muchas ocasiones windows instala por defecto la versión 2 de python en vez de la 3.
 
-2. **Modifica training_data.json
+2. **Modifica training_data.json**:
+En el interior de `/data/training_data.json` se almacena su entrenamiento y las respuestas que tiene para dar predefinidas, el bot además está creado de tal manera que dentro de `learning_data` almacene las conversaciones y aprenda en base a eso, mejorando así su precisión en las respuestas y la manera en la que lo hace.
+
+Para modificar su manera de interaccionar se debe modificar `/data/training_data.json`.

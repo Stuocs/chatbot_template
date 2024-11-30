@@ -1,0 +1,182 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": [
+                "Hola",
+                "Hey",
+                "Buenos días",
+                "Buenas tardes",
+                "Buenas noches",
+                "¿Qué tal?",
+                "¿Cómo estás?",
+                "Saludos"
+            ],
+            "responses": [
+                "¡Hola! Soy un chatbot de asistencia. ¿En qué puedo ayudarte?",
+                "¡Hey! Soy tu asistente virtual. ¿Cómo puedo ayudarte hoy?",
+                "¡Hola! Me llamo ChatBot, ¿qué necesitas?",
+                "¡Saludos! Soy un asistente virtual, ¿en qué puedo ayudarte?"
+            ]
+        },
+        {
+            "tag": "nombre",
+            "patterns": [
+                "¿Cómo te llamas?",
+                "¿Cuál es tu nombre?",
+                "¿Quién eres?",
+                "¿Me dices tu nombre?",
+                "¿Cuál es tu identidad?",
+                "Dime tu nombre"
+            ],
+            "responses": [
+                "Me llamo ChatBot, soy un asistente virtual",
+                "Soy ChatBot, un asistente virtual diseñado para ayudarte",
+                "Mi nombre es ChatBot, ¿en qué puedo ayudarte?",
+                "Me llaman ChatBot, estoy aquí para asistirte"
+            ]
+        },
+        {
+            "tag": "despedida",
+            "patterns": [
+                "Adiós",
+                "Hasta luego",
+                "Chao",
+                "Nos vemos",
+                "Hasta pronto",
+                "Me voy",
+                "Tengo que irme",
+                "exit",
+                "quit",
+                "bye"
+            ],
+            "responses": [
+                "¡Hasta luego! Que tengas un buen día",
+                "¡Adiós! Fue un placer ayudarte",
+                "¡Nos vemos pronto!",
+                "¡Que tengas un excelente día!"
+            ]
+        },
+        {
+            "tag": "agradecimiento",
+            "patterns": [
+                "Gracias",
+                "Muchas gracias",
+                "Te lo agradezco",
+                "Eres de gran ayuda",
+                "Gracias por tu ayuda"
+            ],
+            "responses": [
+                "¡De nada! Estoy aquí para ayudar",
+                "Es un placer poder ayudarte",
+                "No hay de qué, para eso estoy",
+                "Me alegro de haber sido útil"
+            ]
+        },
+        {
+            "tag": "capacidades",
+            "patterns": [
+                "¿Qué puedes hacer?",
+                "¿Cuáles son tus funciones?",
+                "¿Para qué sirves?",
+                "¿Eres capaz de",
+                "¿Puedes",
+                "¿Qué sabes hacer?"
+            ],
+            "responses": [
+                "Soy un chatbot básico. Puedo mantener conversaciones simples, responder preguntas básicas y ayudarte con información general",
+                "Mis capacidades son limitadas. Soy un asistente virtual que puede mantener conversaciones básicas y responder preguntas simples",
+                "Soy un programa de chat diseñado para mantener conversaciones básicas y proporcionar asistencia simple",
+                "Como chatbot, puedo entender y responder a preguntas básicas, pero mis capacidades son limitadas"
+            ]
+        },
+        {
+            "tag": "desconocido",
+            "patterns": [],
+            "responses": [
+                "Lo siento, no entiendo esa pregunta. ¿Podrías reformularla?",
+                "No estoy seguro de entender lo que dices. ¿Podrías decirlo de otra manera?",
+                "Disculpa, pero no comprendo tu mensaje. ¿Podrías explicarlo de otra forma?",
+                "No tengo una respuesta para eso. ¿Podrías hacer la pregunta de otra manera?"
+            ]
+        },
+        {
+            "tag": "clima",
+            "patterns": [
+                "¿Cómo está el clima?",
+                "¿Cuál es el pronóstico del tiempo?",
+                "¿Va a llover hoy?",
+                "¿Hace frío?",
+                "¿Cuál es la temperatura?"
+            ],
+            "responses": [
+                "Actualmente, el clima es soleado con una temperatura de 25°C.",
+                "El pronóstico del tiempo indica lluvia para esta tarde.",
+                "Hoy hace frío, la temperatura es de 5°C.",
+                "La temperatura actual es de 18°C, con cielo despejado.",
+                "Va a llover más tarde, así que no olvides tu paraguas."
+            ]
+        },
+        {
+            "tag": "chistes",
+            "patterns": [
+                "Cuéntame un chiste",
+                "Dime algo gracioso",
+                "Hazme reír",
+                "¿Tienes algún chiste?"
+            ],
+            "responses": [
+                "¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter.",
+                "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
+                "¿Por qué el libro de matemáticas estaba triste? Porque tenía demasiados problemas.",
+                "¿Cuál es el colmo de un electricista? No encontrar su corriente de vida."
+            ]
+        },
+        {
+            "tag": "noticias",
+            "patterns": [
+                "Dame las noticias",
+                "¿Qué está pasando en el mundo?",
+                "¿Hay alguna novedad?",
+                "Noticias de última hora"
+            ],
+            "responses": [
+                "Aquí tienes las últimas noticias: (Proporcionar noticias actuales)",
+                "Las últimas noticias indican un cambio significativo en el mercado financiero.",
+                "En noticias recientes, se ha anunciado un nuevo descubrimiento científico.",
+                "Las noticias de hoy destacan un importante evento político."
+            ]
+        },
+        {
+            "tag": "entretenimiento",
+            "patterns": [
+                "Recomiéndame una película",
+                "¿Qué película puedo ver?",
+                "Sugiéreme un libro",
+                "¿Cuál es una buena serie para ver?",
+                "¿Qué me sugieres para escuchar?"
+            ],
+            "responses": [
+                "Te recomiendo ver 'Inception', es una película fascinante.",
+                "Un buen libro para leer es 'Cien años de soledad' de Gabriel García Márquez.",
+                "Una serie popular que puedes ver es 'Stranger Things'.",
+                "Para escuchar, te sugiero el álbum 'Abbey Road' de The Beatles."
+            ]
+        },
+        {
+            "tag": "salud",
+            "patterns": [
+                "¿Tienes algún consejo de salud?",
+                "¿Cómo puedo mejorar mi bienestar?",
+                "Dame un tip para estar saludable",
+                "¿Qué es bueno para la salud?"
+            ],
+            "responses": [
+                "Beber suficiente agua todos los días es crucial para la salud.",
+                "Hacer ejercicio regularmente mejora tu bienestar físico y mental.",
+                "Mantener una dieta equilibrada te ayudará a sentirte mejor.",
+                "Dormir al menos 7-8 horas cada noche es vital para una buena salud."
+            ]
+        }
+    ]
+}
