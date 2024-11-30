@@ -3,7 +3,7 @@
 This repository contains a basic template for a chatbot with several predefined intents. The chatbot is designed to answer common questions, perform certain calculations, and maintain basic conversations.
 
 ## Content
-- **intents.json**: JSON file with the chatbot's intents and possible responses.
+- **data/training_data.json**: JSON file with the chatbot's intents and possible responses.
 - **README.md**: Introduction and guide to using the repository.
 
 ## How to use
@@ -37,17 +37,17 @@ Inside `/data/training_data.json`, you will find the training data and predefine
 To modify its interaction manner, you should adjust `/data/training_data.json`.
 
 ## Credits
-This chatbot template was created by [Your Name](https://github.com/your-username).
+This chatbot template was created by [Alesber](https://github.com/Stuocs).
 
 ## License
-This project is licensed under the MIT License. For more information, see the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. For more information, see the [MIT_LICENSE](LICENSE) file.
 
 # Plantilla para Chatbot
 
 Este repositorio contiene una plantilla básica para un chatbot con varias intenciones predefinidas. El chatbot está diseñado para responder a preguntas comunes, hacer ciertos cálculos y mantener conversaciones básicas.
 
 ## Contenido
-- **intents.json**: Archivo JSON con las intenciones del chatbot y las posibles respuestas.
+- **data/training_data.json**: Archivo JSON con las intenciones del chatbot y las posibles respuestas.
 - **README.md**: Documento de introducción y guía para el uso del repositorio.
 
 ## Cómo usar
